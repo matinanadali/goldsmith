@@ -10,7 +10,7 @@ int find_sum(int n, int *path) {
     return sum;
 }
 
-//συγκρίνει δύο διαδρομές ως προς το μεγαλύτερο άθροισμα σβώλων χρυσού και επιστρέφει αυτή με το μεγαλύτερο
+//συγκρίνει δύο διαδρομές ως προς το άθροισμα σβώλων χρυσού και επιστρέφει αυτή με το μεγαλύτερο
 int* find_best_path(int *path1, int *path2, int n) {
     return (find_sum(n, path1) > find_sum(n, path2)) ? path1 : path2;
 }
